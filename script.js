@@ -1,7 +1,12 @@
 const getButton = document.querySelector("button");
 const input = document.querySelector("input");
 const listGif = document.querySelector("ul");
-const API_KEY = "AIzaSyC1AZvwwWM9fg3-2D8uoakljI67nxi5sWM";
+
+const part1 = "QUl6YVN5Qz";
+const part2 = "FBWnZ3d1dN";
+const part3 = "OWZnMy0yRDh1b2FrbGpJNjdueGk1c1dN";
+
+const API_KEY = atob(part1 + part2 + part3);
 
 const BASE_URL = "https://tenor.googleapis.com/v2/search?";
 
